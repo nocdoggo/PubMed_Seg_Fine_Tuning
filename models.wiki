@@ -1,0 +1,61 @@
+
+== Auto-Encoding Transformers (AET) ==
+
+{|
+! Name !! Paper !! Properties
+|-
+| BERT || [https://arxiv.org/abs/1810.04805 Bert: Pre-training of deep bidirectional transformers for language understanding] ||
+|-
+| RoBERTa || [https://arxiv.org/abs/1907.11692 Roberta: A robustly optimized bert pretraining approach] || longer sequences, dynamically masking
+|-
+| ALBERT || [https://arxiv.org/abs/1909.11942 Albert: A lite bert for self-supervised learning of language representations] || light, a few parameters
+|-
+| UNILM || [https://proceedings.neurips.cc/paper/2019/hash/c20bb2d9a50d5ac1f713f8b34d9aac5a-Abstract.html Unified language model pre-training for natural language understanding and generation] || generation and comprehension of natural language, Transformer & self-attention
+|-
+| XLM || [https://proceedings.neurips.cc/paper/8928-cross-lingual-language-model-pretraining Cross-lingual language model pretraining] || cross-lingual
+|-
+| DistilBERT || [https://arxiv.org/abs/1910.01108 DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter] || less complex, quicker, and less costly, distillation, and cosine-distance losses
+|-
+| SMITH || [https://dl.acm.org/doi/abs/10.1145/3340531.3411908 Beyond 512 tokens: Siamese multi-depth transformer-based hierarchical encoder for long-form document matching] || long-form document matching
+|-
+| ERNIE || [https://arxiv.org/abs/1904.09223 Ernie: Enhanced representation through knowledge integration] || learn language representation enhanced by knowledge masking strategies
+|-
+| ERNIE 2.0 || [https://ojs.aaai.org/index.php/AAAI/article/view/6428 Ernie 2.0: A continual pre-training framework for language understanding] || continuous pre-training system that integrates lexical, syntactic, and semantic information from big data in order to expand its already extensive knowledge base.
+|-
+|}
+
+== Auto-Regressive Transformers (ART) ==
+
+{|
+! Name !! Paper !! Properties
+|-
+| Transformer-XL || [https://arxiv.org/abs/1901.02860 Transformer-xl: Attentive language models beyond a fixed-length context] || makes use of the hidden states acquired in earlier segments; relative positional encoding
+|-
+| XLNet || [https://proceedings.neurips.cc/paper/2019/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html Xlnet: Generalized autoregressive pretraining for language understanding] ||
+|-
+| GPT3 || [https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html Language models are few-shot learners] ||
+|-
+| CTRL || [https://arxiv.org/abs/1909.05858 Ctrl: A conditional transformer language model for controllable generation] ||
+|-
+| MegatronLM || [https://arxiv.org/abs/1909.08053 Megatron-lm: Training multi-billion parameter language models using model parallelism] || balance the advantages of auto-encoding and auto-regressive language modeling while avoiding their drawbacks
+|-
+|}
+
+== S2S Transformers (S2S) ==
+
+{|
+! Name !! Paper !! Properties
+|-
+| T5 || [https://dl.acm.org/doi/abs/10.5555/3455716.3455856 Exploring the limits of transfer learning with a unified text-to-text transformer] ||
+|-
+| BART || [https://arxiv.org/abs/1910.13461 Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension] ||
+|-
+| PLBART || [https://arxiv.org/abs/2103.06333 Unified pre-training for program understanding and generation] || normalizing layer on top of both the encoder and decoder in order to maintain training with FP16 precision
+|-
+| PEGAUSUS || [http://proceedings.mlr.press/v119/zhang20ae Pegasus: Pre-training with extracted gap-sentences for abstractive summarization] || GSG objective
+|-
+| PALM || [https://arxiv.org/abs/2004.07159 Palm: Pre-training an autoencoding&autoregressive language model for context-conditioned generation] || GSG objective
+|-
+| MASS || [https://arxiv.org/abs/1905.02450 Mass: Masked sequence to sequence pre-training for language generation] || Each sentence is broken down into words; then, the sentence is reconstructed from randomly selected words.
+|-
+|}
